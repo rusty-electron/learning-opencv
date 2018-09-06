@@ -1,7 +1,7 @@
 # Learning OpenCV
 This repository contains my week-wise journey of learning computer vision by using OpenCV C++ Library as the primary tool. One can take up this series of code implementation as the path to learning OpenCV. I have listed study materials that go hand in hand with this content so that one can lookup the theory behind the algorithms and explore alternate code implementations of the same.
 
-![cv](.\cv.png)
+![cv](cv.png)
 
 <br>
 
