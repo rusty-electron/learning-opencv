@@ -74,6 +74,30 @@
         imfilter(f,g,'symmetric')
         ```
         > *Reflective method* is the suitable solution for edge issues as it imitates the statistics of the color intensities of the rest of the image. Also this method doesn't allow obvious edge boundaries to be induced.
-    
 
+* Action of various linear filters on an image:
+
+    > In case if the coefficients of the filters don't sum up to 1.0, a scale value can either be multiplied to the filter or the image *(not both)* for compensation.
+
+    * **Impulse Filters - correlation**: If the impulse is centred in the filter, it returns the original image with no changes. In case of shifting the impulse by 1 pixel to the right, the output image is shifted by 1 pixel to the left w.r.t. the original image. 
     
+    * **Simple uniform weighted filter**: a 3x3 filter with weights of 1/9 applied to an image will simple blur it.
+    
+    * **Sharpening Filter**:  *Duh!* I will write here about unsharp mask soon.
+
+* **Salt and pepper noise**:
+    It is also known as impulse noise. This noise is caused by sharp and sudden disturbances in the image signal. It presents itself as sparsely occurring white and black pixels.
+
+* **Median Filter**:
+    The effective noise reduction technique for salt and pepper noise is median filter.
+    * It is a non-linear filter
+    * It is edge preserving
+
+    ```matlab
+    %generating salt and pepper noise
+    noisy_img = imnoise(img,'salt & pepper', d); %d is the noise intensity
+
+    %applying median filter
+    filtered = medfilt2(noisy_img);
+    ```
+
