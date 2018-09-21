@@ -92,6 +92,8 @@
     The effective noise reduction technique for salt and pepper noise is median filter.
     * It is a non-linear filter
     * It is edge preserving
+    
+    <br>
 
     ```matlab
     %generating salt and pepper noise

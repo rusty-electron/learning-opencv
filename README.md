@@ -29,7 +29,7 @@ For Visual Studio CE Installation, you can follow this [video](https://youtu.be/
 
 For OpenCV Installation and setup, you can follow this [video](https://youtu.be/M-VHaLHC4XI)
 
-> Although this video installs an older version of OpenCV, the setup procedure is still the same.
+*Although this video installs an older version of OpenCV, the setup procedure is still the same.*
 
 <hr>
 
