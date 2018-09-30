@@ -41,6 +41,8 @@ The `Source.cpp` file can be found at the sub-directory of the same name.
 
 The compiled `executables` can be found in the `x64/debug` folder.
 
+For running the `.m` scripts, you will need to install either [MATLAB](https://www.mathworks.com/products/matlab.html) or [Octave](https://www.gnu.org/software/octave/) along with their respective Image Processing Toolbox. You can also try them at [Octave online](https://octave-online.net).
+
 ## Contribution
 
 mail me at pritom.gogoi101@gmail.com for contributing to this repo.
@@ -58,3 +60,11 @@ mail me at pritom.gogoi101@gmail.com for contributing to this repo.
   
   [1]: https://in.udacity.com/course/introduction-to-computer-vision--ud810
   [2]: https://www.youtube.com/watch?v=715uLCHt4jE&list=PLd3hlSJsX_ImKP68wfKZJVIPTd8Ie5u-9
+
+  # Update Log
+
+  This section contains update log for readme.
+
+  **#1:** MATLAB code
+
+  I have added MATLAB code for various topics. These scripts are easy to run and the results are handy for verification of C++ code results. 
