@@ -1,6 +1,8 @@
 # Learning OpenCV
 This repository contains my week-wise journey of learning computer vision by using OpenCV C++ Library as the primary tool. One can take up this series of code implementation as the path to learning OpenCV. I have listed study materials that go hand in hand with this content so that one can lookup the theory behind the algorithms and explore alternate code implementations of the same.
 
+***See sub-folder readme for week-wise description***
+
 ![cv](cv.png)
 
 <br>
@@ -61,10 +63,10 @@ mail me at pritom.gogoi101@gmail.com for contributing to this repo.
   [1]: https://in.udacity.com/course/introduction-to-computer-vision--ud810
   [2]: https://www.youtube.com/watch?v=715uLCHt4jE&list=PLd3hlSJsX_ImKP68wfKZJVIPTd8Ie5u-9
 
-  # Update Log
+  ## Update Log
 
   This section contains update log for readme.
 
-  **#1:** MATLAB code
+  **#1: MATLAB code**
 
   I have added MATLAB code for various topics. These scripts are easy to run and the results are handy for verification of C++ code results. 
