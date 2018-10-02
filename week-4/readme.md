@@ -67,6 +67,48 @@ Apply filter of `[-1 1]` to evaluate PD w.r.t x and apply `[-1; 1]` for PD w.r.t
 
 ![](./assets/sobel.png)
 
+This operation is able in MATLAB as the function `imgradientxy(image,'sobel')`. But you need to multiply it by 1/8 for *normalization*.
+
+*Note:* Using *correlation* or *convolution*, the choice doesn't matter as long we know how to interpret the result. `imfilter` does correlation by default but if we want to perform convolution, we can do so by specifying the option as. Anyway, interpreting results of correlation is much easier.
+
+```matlab
+imfilter(A,h,'conv')
+```
+*Task:* Try the gradient angle finder to find regions with gradient angle of `180 deg or -180 deg`. 
+
+**Applying in Real World:**
+
+Simply applying gradient operation on real world images will not yield satisfactory results because real images don't have smooth distribution of pixel intensity as found in our sample shape images.
+
+Here is an example of intensities along a row or column of an image.
+
+![](./assets/intensity.png)
+
+Applying derivative operator, we get:
+
+![](./assets/intensity-derv.png)
+
+The noises inherent in the image are the obstacles in detection of the edges. Like all other noises, this noise can be reduced by applying a proper filter.
+
+![](./assets/noise-vs-gradient.png)
+
+Therefore, in this example we first apply a gaussian filter to the image and then find the image gradient. The peaks in the image gradient matrix are the edges.   
+
+![](./assets/filter-intensity.png)
+
+Also, note that differentiation is associative and linear.
+
+![](./assets/note.png)
+
+Another way to find the edges using derivatives is to evaluate the second derivative of the image.
+
+![](./assets/short-cut.png)
+
+The second derivative provides a smooth slope at the edge region.
+
+
+
+
 
 
 
