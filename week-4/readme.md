@@ -19,6 +19,22 @@ The given image consist of a small number of black pixels over a background of w
 
 *Basic Idea:* Look for a neighbourhood with strong signs of change
 
+* *Visualization*
+
+Consider this image:
+![](./assets/img.png)
+
+We can plot this image as an 3-D plot to visualize the edges w.r.t sharp intensity change.
+
+The 3-D plot when looked upon from the top appears just like the original image.
+
+![](./assets/surf.png)
+
+But, on rotating the 3-D plot we discover the sharp edges formed by the intensity changes.
+
+![](./assets/surf-rot.png)
+<hr>
+
 An Edge is place of rapid change in the image intensity function.
 
 Therefore, this rapid change will create a slope from one intensity state to another. We know that the derivative of a function at a point gives us the slope of the function at that point. So applying differentiation at an edge will give us peaks and the extrema of these peaks are the edges.
