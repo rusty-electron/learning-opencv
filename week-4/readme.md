@@ -69,6 +69,10 @@ Apply filter of `[-1 1]` to evaluate PD w.r.t x and apply `[-1; 1]` for PD w.r.t
 
 This operation is able in MATLAB as the function `imgradientxy(image,'sobel')`. But you need to multiply it by 1/8 for *normalization*.
 
+*Well-known Image Gradient Operators:*
+
+![](./assets/well-known-gradient.png)
+
 *Note:* Using *correlation* or *convolution*, the choice doesn't matter as long we know how to interpret the result. `imfilter` does correlation by default but if we want to perform convolution, we can do so by specifying the option as. Anyway, interpreting results of correlation is much easier.
 
 ```matlab
@@ -100,11 +104,58 @@ Also, note that differentiation is associative and linear.
 
 ![](./assets/note.png)
 
-Another way to find the edges using derivatives is to evaluate the second derivative of the image.
+Using this propery, we can simply find the derivative of the filter and then apply the result as filter to the image.
 
 ![](./assets/short-cut.png)
 
+Another way to find the edges using derivatives is to evaluate the second derivative of the image.
+
+![](./assets/2nd-derv.png)
+
 The second derivative provides a smooth slope at the edge region.
+
+## MATLAB Implementation Results
+
+I coded the procedures mentioned above in MATLAB and found the given results.
+
+At first, I used the simple discrete gradient operator `[0 0 0;-0.5 0 0.5; 0 0 0]` on a basic image with a shape of diamond on it to evaluate the partial derivative image along x-axis.
+
+*Test Image:*
+
+![](./test-results/img-basic.png)
+
+*PD along x-axis:*
+
+![](./test-results/img-basic-x.png)
+
+*PD along y-axis:*
+
+![](./test-results/img-basic-y.png)
+
+*Edge Detection*
+
+![](./test-results/img-basic-r.png)
+
+Applying the same on a photograph of a scenery, we get:
+
+![](./test-results/img_mont1.png)
+
+* The Sobel operator and other well-known operators for calculating image gradients can be easily implemented in MATLAB using `imgradientxy()` function.
+
+*The result of using Sobel operator on the previously used diamond image is shown below:*
+
+![](./test-results/sobel.png)
+
+<hr>
+
+* Image gradient direction
+
+*It is also possible to determine the gradient direction in an image using any of the already implemented image gradient operators*
+
+*The example shown below is the output of a script that highlights the region of an image having gradient direction between 30 deg and 60 deg.*
+
+![](./test-results/grad-dir.png)
+
 
 
 
