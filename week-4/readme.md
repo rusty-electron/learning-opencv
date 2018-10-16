@@ -22,6 +22,7 @@ The given image consist of a small number of black pixels over a background of w
 * *Visualization*
 
 Consider this image:
+
 ![](./assets/img.png)
 
 We can plot this image as an 3-D plot to visualize the edges w.r.t sharp intensity change.
