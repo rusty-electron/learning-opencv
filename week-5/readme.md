@@ -64,6 +64,15 @@ As varying values of sigma provides images of varying blurness, in the same way 
         doc edge
         % or else try help edge
         ```
+
+        <p style="text-align:center"> <i>The Youtube channel <b>Numberphile</b> has a great video on Canny Operator, you can check it out on the link below</i>
+
+        <a href="http://www.youtube.com/watch?feature=player_embedded&v=sRFM5IEqR2w
+        " target="_blank"><img style="display: block; margin: 0 auto"  src="http://img.youtube.com/vi/sRFM5IEqR2w/0.jpg" 
+        alt="Video Thumbnail Image" width="400" border="2"/></a>
+
+        </p>
+        <hr>
     
 * Canny Edge Detector
 
